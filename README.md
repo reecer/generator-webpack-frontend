@@ -72,7 +72,7 @@ and
 
 __src/component/newComponent.scss__
 
-	newComponent {
+	.newComponent {
 		/* SCSS */
 	}
 
