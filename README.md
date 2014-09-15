@@ -1,6 +1,6 @@
 generator-webpack-frontend
 ==========================
-Simple [Yeoman](http://yeoman.io) generating wielding [Webpack](http://webpack.github.io/), [ReactJs](http://facebook.github.io/react/), [Sass](http://sass-lang.com), and [Foundation](http://foundation.zurb.com).
+Simple [Yeoman](http://yeoman.io) generating wielding [Webpack](http://webpack.github.io/), [ReactJs](http://facebook.github.io/react/), [Gulp](http://gulpjs.com/), [Sass](http://sass-lang.com), and [Foundation](http://foundation.zurb.com).
 
 ## Structure
 
@@ -32,8 +32,16 @@ yo webpack-frontend
 
 > You can optionally skip the init npm & bower install with the `--skip-install` flag.
 
+## Building
+Build all your jsx and scss:
 
-##Create component
+```bash
+gulp build
+```
+
+> Builds to directory ```build/```.
+
+## Create component
 
 ```bash
 yo webpack-frontend:component newComponent
