@@ -1,0 +1,13 @@
+{
+	"name": "package",
+	"version": "0.0.0",
+	"devDependencies": {
+		"gulp": "~3.8.8",
+		"webpack": "~1.4.0-beta6",
+		"react": "~0.11.1",
+		"jsx-loader": "~0.11.0",
+		"sass-loader": "~0.2.0",
+	    "css-loader": "~0.8.0",
+		"style-loader": "~0.8.0"
+	}
+}
