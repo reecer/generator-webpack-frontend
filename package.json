@@ -1,25 +1,13 @@
 {
   "name": "generator-webpack-frontend",
   "version": "0.0.0",
-  "description": "Yeoman generator",
+  "description": "Simple Yeoman generating wielding Webpack, ReactJs, Gulp, Sass, and Foundation.",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "reecer/generator-webpack-frontend",
-  "author": {
-    "name": "",
-    "email": "",
-    "url": "https://github.com/someuser"
-  },
   "engines": {
     "node": ">=0.10.0"
   },
-  "scripts": {
-    "test": "mocha"
-  },
-  "files": [
-    "app",
-    "component"
-  ],
   "keywords": [
     "yeoman-generator"
   ],
