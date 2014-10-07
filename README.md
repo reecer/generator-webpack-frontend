@@ -7,8 +7,8 @@ Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.gi
 > ├── static/		 
 > │   ├── bundle.js (_built with webpack_) 	 
 > │   ├── index.html	
-> │   ├── components/	
-> │   └── stylesheets/	
+> │   ├── components/		
+> │   └── stylesheets/		
 > ├── package.json	 
 > ├── bower.json       
 > └── webpack.config.js
