@@ -7,9 +7,9 @@ var path = require('path');
 var sassPaths = path.resolve(__dirname, 'bower_components/foundation/scss/');
 
 module.exports = {
-	entry: "./src/components/app.jsx",
+	entry: "./static/components/app.jsx",
 	output: {
-		path: "./build",
+		path: "./static",
 		filename: "bundle.js"
 	},
 	

@@ -1,18 +1,16 @@
 generator-webpack-frontend
 ==========================
-Simple [Yeoman](http://yeoman.io) generating wielding [Webpack](http://webpack.github.io/), [ReactJs](http://facebook.github.io/react/), [Gulp](http://gulpjs.com/), [Sass](http://sass-lang.com), and [Foundation](http://foundation.zurb.com).
+Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.github.io/), [ReactJs](http://facebook.github.io/react/), [Sass](http://sass-lang.com), and [Foundation](http://foundation.zurb.com).
 
-## Structure
+## File Structure
 
-> ├── bower.json       
-> ├── build     		 
-> │   ├── bundle.js 	 
-> │   └── index.html	 
-> ├── gulpfile.js		 
+> ├── static/		 
+> │   ├── bundle.js (_built with webpack_) 	 
+> │   ├── index.html	 
+> │   ├── components/	
+> │   └── stylesheets/	
 > ├── package.json	 
-> ├── src	   			 
-> │   ├── components 	 
-> │   └── index.html	 
+> ├── bower.json       
 > └── webpack.config.js
 
 ## Getting Started
@@ -24,32 +22,23 @@ npm install -g generator-webpack-frontend
 ```
 
 
-Finally, initiate the generator:
+Then, to use:
 
 ```bash
 yo webpack-frontend
 ```
 
-> You can optionally skip the init npm & bower install with the `--skip-install` flag.
+> You can optionally skip the npm & bower install with the `--skip-install` flag.
 
-## Building
-Build all your jsx and scss:
+## Add Component
 
-```bash
-gulp build
-```
-
-> Builds to directory ```build/```.
-
-## Create component
-
-```bash
+```bash		
 yo webpack-frontend:component newComponent
 ```
 
-...generates...
+_...generates..._
 
-__src/component/newComponent.jsx__
+__static/component/newComponent.jsx__
 
 	/**
 	* @jsx React.DOM
@@ -68,14 +57,22 @@ __src/component/newComponent.jsx__
 	
 	module.exports = newComponent;
 
-and
+_...and..._
 
-__src/component/newComponent.scss__
+__static/stylesheets/newComponent.scss__
 
 	.newComponent {
 		/* SCSS */
 	}
 
+## Building
+Use webpack to build. Watches for changes with ```-w```.
+
+```bash
+webpack -w
+```
+
+> Builds to /static/bundle.js by default.
 
 
 ## License

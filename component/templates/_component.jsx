@@ -3,7 +3,7 @@
  */
 
 var React = require('react');
-require('./<%= name %>.scss');
+require('../stylesheets/<%= name %>.scss');
 
 var <%= name %> = React.createClass({
 	render: function() {

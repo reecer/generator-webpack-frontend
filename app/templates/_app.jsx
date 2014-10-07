@@ -3,7 +3,8 @@
  */
 
 var React = require('react');
-require('./app.scss');
+
+require('../stylesheets/app.scss');
 
 var App = React.createClass({
 	render: function() {
