@@ -6,7 +6,7 @@ Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.gi
 
 > ├── static/		 
 > │   ├── bundle.js (_built with webpack_) 	 
-> │   ├── index.html	 
+> │   ├── index.html	
 > │   ├── components/	
 > │   └── stylesheets/	
 > ├── package.json	 
