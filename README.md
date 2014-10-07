@@ -45,7 +45,7 @@ __static/component/newComponent.jsx__
 	*/
 
 	var React = require('react');
-	require('./newComponent.scss');
+	require('../stylesheets/newComponent.scss');
 	
 	var newComponent = React.createClass({
 		render: function() {
