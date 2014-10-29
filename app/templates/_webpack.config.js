@@ -4,31 +4,27 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var sassPaths = path.resolve(__dirname, 'bower_components/foundation/scss/');
-
 module.exports = {
-	entry: "./static/components/app.jsx",
+	entry: "./client/components/app.jsx",
 	output: {
-		path: "./static",
+		path: "./client",
 		filename: "bundle.js"
 	},
 	
 	resolve: {
-		modulesDirectories: [ 'node_modules', 'bower_components' ],
+		modulesDirectories: [ 'node_modules' ],
 		extensions: ['', '.js', '.jsx'],
 	},
 
     plugins: [
-        new webpack.ResolverPlugin(
-            new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
-        )
+        new webpack.optimize.DedupePlugin(),
     ],
 
 
 	module: {
 		loaders: [
 			{ test: /\.css$/, loader: "style!css" }, 
-			{ test: /\.scss$/, loader: "style!css!sass?includePaths[]=" + sassPaths }, 		
+			{ test: /\.scss$/, loader: "style!css!sass" },
 			{ test: /\.jsx$/,  loader: 'jsx-loader'}
 		]
 	}
