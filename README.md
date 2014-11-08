@@ -1,6 +1,6 @@
 generator-webpack-frontend
 ==========================
-Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.github.io/), [ReactJs](http://facebook.github.io/react/), [Sass](http://sass-lang.com), and [Foundation](http://foundation.zurb.com).
+Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.github.io/), [ReactJs](http://facebook.github.io/react/), and [Sass](http://sass-lang.com).
 
 ## File Structure
 
