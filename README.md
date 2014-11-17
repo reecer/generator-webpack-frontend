@@ -10,7 +10,6 @@ Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.gi
 > │   ├── components/		
 > │   └── stylesheets/		
 > ├── package.json	 
-> ├── bower.json       
 > └── webpack.config.js
 
 ## Getting Started
