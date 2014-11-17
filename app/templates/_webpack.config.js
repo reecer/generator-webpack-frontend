@@ -3,6 +3,7 @@
 
 var webpack = require('webpack');
 var path = require('path');
+
 var sassPaths = [ 
     'client/stylesheets/'
 ]
@@ -12,7 +13,7 @@ var sassPaths = [
 module.exports = {
 	entry: "./client/components/app.jsx",
 	output: {
-		path: "./build",
+		path: "./client",
 		filename: "bundle.js"
 	},
 	

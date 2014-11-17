@@ -1,16 +1,15 @@
 generator-webpack-frontend
 ==========================
-Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.github.io/), [ReactJs](http://facebook.github.io/react/), [Sass](http://sass-lang.com), and [Foundation](http://foundation.zurb.com).
+Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.github.io/), [ReactJs](http://facebook.github.io/react/), and [Sass](http://sass-lang.com).
 
 ## File Structure
 
-> ├── static/		 
+> ├── client/		 
 > │   ├── bundle.js (_built with webpack_) 	 
 > │   ├── index.html	
 > │   ├── components/		
 > │   └── stylesheets/		
 > ├── package.json	 
-> ├── bower.json       
 > └── webpack.config.js
 
 ## Getting Started
@@ -38,7 +37,7 @@ yo webpack-frontend:component newComponent
 
 _...generates..._
 
-__static/component/newComponent.jsx__
+__client/components/newComponent.jsx__
 
 	/**
 	* @jsx React.DOM
@@ -59,7 +58,7 @@ __static/component/newComponent.jsx__
 
 _...and..._
 
-__static/stylesheets/newComponent.scss__
+__client/stylesheets/newComponent.scss__
 
 	.newComponent {
 		/* SCSS */
@@ -72,7 +71,7 @@ Use webpack to build. Watches for changes with ```-w```.
 webpack -w
 ```
 
-> Builds to /static/bundle.js by default.
+> Builds to /client/bundle.js by default.
 
 
 ## License
