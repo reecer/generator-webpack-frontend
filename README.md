@@ -37,7 +37,7 @@ yo webpack-frontend:component newComponent
 
 _...generates..._
 
-__static/component/newComponent.jsx__
+__client/components/newComponent.jsx__
 
 	/**
 	* @jsx React.DOM
@@ -58,7 +58,7 @@ __static/component/newComponent.jsx__
 
 _...and..._
 
-__static/stylesheets/newComponent.scss__
+__client/stylesheets/newComponent.scss__
 
 	.newComponent {
 		/* SCSS */
@@ -71,7 +71,7 @@ Use webpack to build. Watches for changes with ```-w```.
 webpack -w
 ```
 
-> Builds to /static/bundle.js by default.
+> Builds to /client/bundle.js by default.
 
 
 ## License
