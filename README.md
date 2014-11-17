@@ -4,7 +4,7 @@ Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.gi
 
 ## File Structure
 
-> ├── static/		 
+> ├── client/		 
 > │   ├── bundle.js (_built with webpack_) 	 
 > │   ├── index.html	
 > │   ├── components/		
