@@ -32,35 +32,35 @@ yo webpack-frontend
 ## Add Component
 
 ```bash		
-yo webpack-frontend:component newComponent
+yo webpack-frontend:component NewComponent
 ```
 
 _...generates..._
 
-__client/components/newComponent.jsx__
+__client/components/NewComponent.jsx__
 
 	/**
 	* @jsx React.DOM
 	*/
 
 	var React = require('react');
-	require('../stylesheets/newComponent.scss');
+	require('../stylesheets/NewComponent.scss');
 	
-	var newComponent = React.createClass({
+	var NewComponent = React.createClass({
 		render: function() {
 			return (
-				<div className="newComponent"></div>
+				<div className="NewComponent"></div>
 			);
 		}
 	});
 	
-	module.exports = newComponent;
+	module.exports = NewComponent;
 
 _...and..._
 
-__client/stylesheets/newComponent.scss__
+__client/stylesheets/NewComponent.scss__
 
-	.newComponent {
+	.NewComponent {
 		/* SCSS */
 	}
 
