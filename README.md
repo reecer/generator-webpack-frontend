@@ -2,78 +2,81 @@ generator-webpack-frontend
 ==========================
 Simple [Yeoman](http://yeoman.io) generator wielding [Webpack](http://webpack.github.io/), [ReactJs](http://facebook.github.io/react/), and [Sass](http://sass-lang.com).
 
-## File Structure
+File Structure
+==============
 
-> ├── client/		 
-> │   ├── bundle.js (_built with webpack_) 	 
-> │   ├── index.html	
-> │   ├── components/		
-> │   └── stylesheets/		
-> ├── package.json	 
-> └── webpack.config.js
+	├── client/
+	│   ├── bundle.js (built by webpack)
+	│   ├── index.html
+	│   ├── components/
+	│   └── stylesheets/
+	├── package.json
+	└── webpack.config.js
 
-## Getting Started
+Installation
+============
 
-To install generator-webpack-frontend from npm, run:
+Install with npm:
 
 ```bash
 npm install -g generator-webpack-frontend
 ```
 
+Usage
+=====
 
-Then, to use:
-
+### Init
+Creates the file structure above in the current directory.
 ```bash
 yo webpack-frontend
 ```
 
 > You can optionally skip the npm & bower install with the `--skip-install` flag.
 
-## Add Component
 
-```bash		
+### Add Component
+Create a jsx component with a corresponding stylesheet.
+
+```bash
 yo webpack-frontend:component NewComponent
 ```
 
-_...generates..._
 
 __client/components/NewComponent.jsx__
+```js
+var React = require('react');
+require('../stylesheets/NewComponent.scss');
 
-	/**
-	* @jsx React.DOM
-	*/
+var NewComponent = React.createClass({
+	render: function() {
+		return (
+			<div className="NewComponent"></div>
+		);
+	}
+});
 
-	var React = require('react');
-	require('../stylesheets/NewComponent.scss');
-	
-	var NewComponent = React.createClass({
-		render: function() {
-			return (
-				<div className="NewComponent"></div>
-			);
-		}
-	});
-	
-	module.exports = NewComponent;
-
-_...and..._
+module.exports = NewComponent;
+```
 
 __client/stylesheets/NewComponent.scss__
+```scss
+.NewComponent {
+	/* SCSS */
+}
+```
 
-	.NewComponent {
-		/* SCSS */
-	}
-
-## Building
-Use webpack to build. Watches for changes with ```-w```.
+Building/Development
+====================
+Use webpack to build. Watch with ```-w```.
 
 ```bash
 webpack -w
 ```
 
-> Builds to /client/bundle.js by default.
+> Builds to client/bundle.js by default.
 
 
-## License
+License
+=======
 
 MIT
