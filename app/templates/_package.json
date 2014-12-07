@@ -1,5 +1,5 @@
 {
-    "name": "package",
+    "name": "",
     "version": "0.0.0",
     "devDependencies": {
         "webpack": "~1.4.0-beta6",

@@ -31,7 +31,7 @@ Creates the file structure above in the current directory.
 yo webpack-frontend
 ```
 
-> You can optionally skip the npm & bower install with the `--skip-install` flag.
+> You can skip the npm install with the `--skip-install` flag.
 
 
 ### Add Component
