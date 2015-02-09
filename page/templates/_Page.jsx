@@ -1,14 +1,13 @@
-'use strict'
-
 var React = require('react');
+var PageMixin = require('../router').PageMixin;
 
 require('../stylesheets/<%= name %>.scss');
 
-class <%= name %> extends React.Component {
+class <%= name %> extends PageMixin {
   render() {
     return (
-      <div>
-      	<%= name %>
+      <div className="<%= name %>">
+        <h1><%= name %></h1>
       </div>
     );
   }

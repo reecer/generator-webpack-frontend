@@ -1,15 +1,31 @@
+'use strict'
+
 var React = require('react');
+var {RouterMixin, Transition} = require('../router');
+
+var pageRoutes = require('../routes');
 
 require('../stylesheets/app.scss');
 
-var App = React.createClass({
-	render: function() {
-		return (
-			<div className="App">
-				<h1>Example app</h1>
-			</div>
-		);
-	}
-});
+class App extends RouterMixin {
+  render() {
+    var view = this.getActiveView({ key: Date.now() });
+    var transition = this.getTransition();
+  
+    return (
+      <body>
+        <Transition transitionName={ transition }>
+          { view }
+        </Transition>
+      </body>
+    );
+  }
 
-React.render(<App />, document.getElementById('app'));
+  componentWillMount(){
+    this.initRouter(pageRoutes);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+  React.render(<App />, document.body);
+});

@@ -1,7 +1,7 @@
 {
   "name": "generator-webpack-frontend",
-  "version": "0.0.0",
-  "description": "Simple Yeoman generating wielding Webpack, ReactJs, Gulp, Sass, and Foundation.",
+  "version": "0.0.2",
+  "description": "Yeoman SPA generator wielding Webpack, ReactJs, and Sass.",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "reecer/generator-webpack-frontend",

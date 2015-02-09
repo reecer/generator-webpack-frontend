@@ -1,0 +1,16 @@
+.Page404 {
+	text-align: center;
+  background-color: blue;
+
+	.title{
+
+	}
+	.goHome{
+		&:hover{
+			cursor: pointer;
+			em{
+				color: red;
+			}
+		}
+	}
+}

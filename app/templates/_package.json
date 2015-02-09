@@ -1,12 +1,17 @@
 {
-    "name": "",
-    "version": "0.0.0",
-    "devDependencies": {
-        "webpack": "~1.4.0-beta6",
-        "react": "^0.12.0",
-        "jsx-loader": "^0.12.0",
-        "sass-loader": "~0.2.0",
-        "css-loader": "~0.8.0",
-        "style-loader": "~0.8.0"
-    }
+  "name": "",
+  "version": "0.0.0",
+  "devDependencies": {
+    "webpack": "~1.4.0-beta6",
+    "react": "^0.13.0-beta.1",
+    "page": "^1.5.0",
+    "regenerator": "^0.8.9",
+    "regenerator-loader": "^2.0.0",
+    "jsx-loader": "^0.12.0",
+    "js-csp": "^0.3.3",
+    "sass-loader": "~0.2.0",
+    "css-loader": "~0.8.0",
+    "style-loader": "~0.8.0",
+    "velocity-animate": "^1.2.1"
+  }
 }
