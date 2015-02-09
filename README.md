@@ -128,7 +128,7 @@ class NewComponent extends React.Component {
 }
 
 module.exports = NewComponent;
-                                ```
+```
 
 __client/stylesheets/NewComponent.scss__
 ```scss
