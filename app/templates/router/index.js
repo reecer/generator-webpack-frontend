@@ -76,7 +76,7 @@ class RouterMixin extends React.Component {
 /**
  * All pages should extend this
  */
-class PageMixin {
+class PageMixin extends React.Component {
   nav(){
     if (!router) throw 'Attempting navigation before initializing router';
 
